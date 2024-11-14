@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    .open-aside:checked ~aside{
+        transform: translateX(0);
+    }
+}

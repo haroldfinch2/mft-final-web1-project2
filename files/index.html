@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/54e3c8a0ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    <aside
+      class="bg-black text-white w-1/2 fixed top-0 right-0 h-svh translate-x-full peer-checked:translate-x-0 group-checked:translate-x-full z-[1000]"
+    >
+      <label for="menu-toggle">
+        <i class="fa fa-times"></i>
+      </label>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Featured</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <header
+      class="flex items-center w-full h-16 sticky top-0 bg-white z-50 md:justify-center"
+    >
+      <div class="w-1/2">
+        <img src="../images/images/logo.svg" alt="backroads logo" />
+      </div>
+
+      <nav class="invisible md:visible">
+        <ul class="flex gap-4">
+          <li class="hover:text-[#51A4B7] transition-all">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-[#51A4B7] transition-all">
+            <a href="#">About</a>
+          </li>
+          <li class="hover:text-[#51A4B7] transition-all">
+            <a href="#">Services</a>
+          </li>
+          <li class="hover:text-[#51A4B7] transition-all">
+            <a href="#">Featured</a>
+          </li>
+          <li class="hover:text-[#51A4B7] transition-all">
+            <a href="#">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+
+      <label
+        for="menu-toggle"
+        class="w-1/2 text-2xl flex justify-end mr-4 md:invisible"
+      >
+        <i class="fa fa-bars"></i>
+      </label>
+    </header>
+
+    <main>
+      <div
+        class="w-full h-[96svh] bg-gradient-to-b from-[#7DB1BD] to-[#4D4E4F] flex flex-col justify-center items-center gap-2 md:gap-6"
+      >
+        <h1 class="text-white text-2xl font-semibold md:text-4xl lg:text-6xl">
+          CONTINUE EXPLORING
+        </h1>
+        <p class="text-white text-xs md:text-base md:px-28 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          saepe eum velit veritatis! Quia eligendi vel quis soluta. Harum,
+          voluptatibus.
+        </p>
+        <button
+          class="text-sm bg-white p-3 hover:bg-transparent hover:border-white border-2 transition-all"
+        >
+          EXPLORE TOURS
+        </button>
+      </div>
+
+      <div class="p-6">
+        <h1 class="text-center text-[#16293E] text-2xl font-semibold mb-4">
+          ABOUT <span class="text-[#51A4B7]">US</span>
+        </h1>
+        <div class="md:flex md:gap-10">
+          <div class="border-8 border-[#16293E]">
+            <img
+              src="../images/images/about.jpeg"
+              alt="beach"
+              class="translate-x-3 translate-y-3"
+            />
+          </div>
+          <div class="md:flex md:flex-col md:justify-center">
+            <h1 class="my-3 text-2xl font-medium text-[#16293E]">
+              Explore The Difference
+            </h1>
+            <p class="text-sm text-[#909EA6]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus rerum vitae molestiae, veritatis quaerat assumenda?
+            </p>
+            <br />
+            <p class="text-sm text-[#909EA6]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus rerum vitae molestiae, veritatis quaerat assumenda?
+            </p>
+            <button class="mt-3 p-2 bg-[#4FA5B9] text-white self-center">
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="h-[65svh] md:h-[40svh] bg-[#F2F5F8] flex flex-col justify-center items-center gap-y-8"
+      >
+        <h1 class="text-2xl font-bold text-[#16293E]">
+          OUR <span class="text-[#4FA5B9]">SERVICES</span>
+        </h1>
+        <div class="flex flex-col gap-5 md:flex-row">
+          <div class="flex items-center">
+            <div
+              class="h-14 w-14 bg-[#4FA5B9] flex justify-center items-center mr-4"
+            >
+              <i class="fa-solid fa-wallet text-[#184854]"></i>
+            </div>
+            <div>
+              <h3 class="font-mono text-[#16293E]">saving money</h3>
+              <p class="text-[0.7rem] text-[#727c82]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                animi.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="h-14 w-14 bg-[#4FA5B9] flex justify-center items-center mr-4"
+            >
+              <i class="fas fa-tree text-[#184854]"></i>
+            </div>
+            <div>
+              <h3 class="font-mono text-[#16293E]">Endless Hiking</h3>
+              <p class="text-[0.7rem] text-[#727c82]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                animi.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="h-14 w-14 bg-[#4FA5B9] flex justify-center items-center mr-4"
+            >
+              <i class="fa-solid fa-socks text-[#184854]"></i>
+            </div>
+            <div>
+              <h3 class="font-mono text-[#16293E]">Amazing Comfort</h3>
+              <p class="text-[0.7rem] text-[#727c82]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic,
+                animi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-auto m-8">
+        <h2 class="text-2xl font-bold text-[#16293E] text-center">
+          FEATURED <span class="text-[#4FA5B9]">TOURS</span>
+        </h2>
+
+        <!-- grid container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:grid-cols-3">
+          <!-- card -->
+          <div class="h-96 bg-[#F2F5F8]">
+            <div class="h-1/2 relative">
+              <img
+                src="../images/images/tour-1.jpeg"
+                alt="china"
+                class="h-full w-full border-2 border-black"
+              />
+              <div
+                class="absolute bottom-0 right-0 bg-[#99E1F1] text-[#16293E]"
+              >
+                August 26th, 2020
+              </div>
+            </div>
+            <div class="px-3">
+              <h3 class="mx-0 my-2 font-mono font-semibold text-lg">
+                Tibet Adventure
+              </h3>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                amet animi nemo architecto ducimus porro ullam voluptas? Quia,
+                natus odio!
+              </p>
+            </div>
+            <div class="flex text-sm gap-8 mt-5 px-3 text-[#63A4BF]">
+              <div>
+                <i class="fa-solid fa-map"></i>
+                China
+              </div>
+              <div>5Days</div>
+              <div>From $2100</div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="h-96 bg-[#F2F5F8]">
+            <div class="h-1/2 relative">
+              <img
+                src="../images/images/tour-2.jpeg"
+                alt="china"
+                class="h-full w-full border-2 border-black"
+              />
+              <div
+                class="absolute bottom-0 right-0 bg-[#99E1F1] text-[#16293E]"
+              >
+                October 1st, 2020
+              </div>
+            </div>
+            <div class="px-3">
+              <h3 class="mx-0 my-2 font-mono font-semibold text-lg">
+                Best Of Java
+              </h3>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                amet animi nemo architecto ducimus porro ullam voluptas? Quia,
+                natus odio!
+              </p>
+            </div>
+            <div class="flex text-sm gap-2 mt-5 px-3 text-[#63A4BF]">
+              <div>
+                <i class="fa-solid fa-map"></i>
+                Indonesia
+              </div>
+              <div>11 Days</div>
+              <div>From $1400</div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="h-96 bg-[#F2F5F8]">
+            <div class="h-1/2 relative">
+              <img
+                src="../images/images/tour-3.jpeg"
+                alt="china"
+                class="h-full w-full border-2 border-black"
+              />
+              <div
+                class="absolute bottom-0 right-0 bg-[#99E1F1] text-[#16293E]"
+              >
+                September 15th, 2020
+              </div>
+            </div>
+            <div class="px-3">
+              <h3 class="mx-0 my-2 font-mono font-semibold text-lg">
+                Explore Hong Kong
+              </h3>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                amet animi nemo architecto ducimus porro ullam voluptas? Quia,
+                natus odio!
+              </p>
+            </div>
+            <div class="flex text-sm gap-2 mt-5 px-3 text-[#63A4BF]">
+              <div>
+                <i class="fa-solid fa-map"></i>
+                Hong Kong
+              </div>
+              <div>5Days</div>
+              <div>From $5000</div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="h-96 bg-[#F2F5F8]">
+            <div class="h-1/2 relative">
+              <img
+                src="../images/images/tour-4.jpeg"
+                alt="china"
+                class="h-full w-full border-2 border-black"
+              />
+              <div
+                class="absolute bottom-0 right-0 bg-[#99E1F1] text-[#16293E]"
+              >
+                December 5th, 2019
+              </div>
+            </div>
+            <div class="px-3">
+              <h3 class="mx-0 my-2 font-mono font-semibold text-lg">
+                Kenya Highlights
+              </h3>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                amet animi nemo architecto ducimus porro ullam voluptas? Quia,
+                natus odio!
+              </p>
+            </div>
+            <div class="flex text-sm gap-6 mt-5 px-3 text-[#63A4BF]">
+              <div>
+                <i class="fa-solid fa-map"></i>
+                Kenya
+              </div>
+              <div>20 Days</div>
+              <div>From $3300</div>
+            </div>
+          </div>
+        </div>
+        <div class="h-32 w-full flex justify-center items-center">
+          <button class="p-2 bg-[#99E1F1] text-blue-950">ALL TOURS</button>
+        </div>
+      </div>
+
+      <!-- LATEST UPDATES -->
+      <div
+        class="h-auto w-full bg-[#51A4BB] flex flex-col justify-center items-center gap-8"
+      >
+        <p class="text-2xl text-center font-semibold text-white mt-5">
+          Want Latest Tour Info And Updates?
+        </p>
+        <input type="text" placeholder="Your Email" />
+        <button class="bg-[#99E1F1] px-4 py-1 cursor-pointer text-blue-950">
+          Submit
+        </button>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 h-auto"
+        >
+          <div class="group relative">
+            <img
+              src="../images/images/tour-1.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+          <div class="group relative">
+            <img
+              src="../images/images/tour-2.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+          <div class="group relative">
+            <img
+              src="../images/images/tour-3.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+          <div class="group relative">
+            <img
+              src="../images/images/tour-4.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+          <div class="group relative">
+            <img
+              src="../images/images/tour-5.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+          <div class="group relative">
+            <img
+              src="../images/images/tour-6.jpeg"
+              alt=""
+              class="hover:brightness-50 transition-all"
+            /><i
+              class="fa-solid fa-magnifying-glass absolute top-1/2 left-1/2 text-2xl text-white invisible group-hover:visible"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="h-[40svh] w-full bg-blue-950 z-10 flex flex-col justify-center items-center gap-4"
+    >
+      <div class="px-6">
+        <ul class="flex text-white gap-4">
+          <li class="hover:text-blue-400"><a href="#">Home</a></li>
+          <li class="hover:text-blue-400"><a href="#">About</a></li>
+          <li class="hover:text-blue-400"><a href="#">Services</a></li>
+          <li class="hover:text-blue-400"><a href="#">Featured</a></li>
+          <li class="hover:text-blue-400"><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="text-2xl text-white">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div class="text-center text-white">
+        Copyright &#169; Backroads Travel Company 2023. All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>
